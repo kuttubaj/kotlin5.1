@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/infoUserFragment">
+
+    <fragment
+        android:id="@+id/infoUserFragment"
+        android:name="com.example.kotlin51.fragments.InfoUserFragment"
+        android:label="InfoUserFragment" >
+        <action
+            android:id="@+id/action_infoUserFragment_to_editUserFragment22"
+            app:destination="@id/editUserFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.kotlin51.fragments.RegistrationFragment"
+        android:label="RegistrationFragment" >
+        <action
+            android:id="@+id/action_registrationFragment_to_infoUserFragment"
+            app:destination="@id/infoUserFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editUserFragment2"
+        android:name="com.example.kotlin51.fragments.EditUserFragment"
+        android:label="EditUserFragment" >
+        <action
+            android:id="@+id/action_editUserFragment2_to_infoUserFragment"
+            app:destination="@id/infoUserFragment" />
+    </fragment>
+</navigation>
